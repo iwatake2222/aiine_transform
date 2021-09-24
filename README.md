@@ -8,6 +8,7 @@ Swapping face using FaceMesh. (could be used to unveil masked faces)
 ## Computer
 - Windows 10 (x64) + Visual Studio 2019
     - Intel Core i7-6700 @ 3.4GHz
+- It's not tested, but this project should run on Linux (x64, aarch64)
 
 ## Deep Learning Inference Framework
 - TensorFlow Lite with XNNPACK delegate
@@ -42,6 +43,14 @@ Swapping face using FaceMesh. (could be used to unveil masked faces)
 - Note:
     - Running with `Debug` causes exception, so use `Release` or `RelWithDebInfo` if you use TensorFlow Lite
     - You may need to modify cmake setting for TensorRT for your environment
+
+## Linux
+```sh
+mkdir build && cd build
+cmake ..
+make
+./main
+```
 
 ## Usage
 ```
